@@ -21,7 +21,6 @@ export default function Page() {
   }, [user]);
 
   useEffect(() => {
-    // console.log("Setting up realtime...");
     if (!user) return;
     console.log("Setting up realtime...");
     const channel = supabase
@@ -87,6 +86,7 @@ export default function Page() {
       alert("Bookmark added");
       setTitle("");
       setUrl("");
+      getBookmarks();
     }
   };
 
@@ -114,7 +114,7 @@ export default function Page() {
       alert("Error deleting bookmark");
     } else {
       alert("Deleted successfully");
-      // getBookmarks(); // to refresh table - not needed because of realtime changes
+      getBookmarks(); // to refresh table
     }
   };
 
@@ -128,7 +128,7 @@ export default function Page() {
       console.log(error);
     } else {
       alert(currentValue ? "Removed from favorites" : "Marked as favorite");
-      // getBookmarks();
+      getBookmarks();
     }
   };
 
