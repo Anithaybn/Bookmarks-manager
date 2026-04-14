@@ -91,6 +91,14 @@ Favorites are visually highlighted and sorted to the top for better accessibilit
 
 ---
 
+## 🔮 Future Improvements
+
+- 📁 **Folder Organization**
+  - If I had more time, I would implement a folder-based system to organize bookmarks into categories (similar to chrome bookmarks). This would improve scalability and usability as the number of bookmarks grows.
+
+- 🔗 **Improved URL Validation**
+  - Currently, only basic validation is implemented. With more time, I would enhance this by adding proper URL validation (e.g., enforcing valid formats like `https://`) and better inline error feedback for a smoother user experience.
+
 ## 🛠️ Setup Instructions
 
 1. Clone the repository
